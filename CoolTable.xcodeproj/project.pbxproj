@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		50ECB87D1A7429B300AB366C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ECB87C1A7429B300AB366C /* AppDelegate.swift */; };
-		50ECB87F1A7429B300AB366C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ECB87E1A7429B300AB366C /* ViewController.swift */; };
 		50ECB8821A7429B300AB366C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50ECB8801A7429B300AB366C /* Main.storyboard */; };
 		50ECB8841A7429B300AB366C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50ECB8831A7429B300AB366C /* Images.xcassets */; };
 		50ECB8871A7429B300AB366C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50ECB8851A7429B300AB366C /* LaunchScreen.xib */; };
 		50ECB8931A7429B300AB366C /* CoolTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ECB8921A7429B300AB366C /* CoolTableTests.swift */; };
+		50ECB89D1A742A6800AB366C /* CoolTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ECB89C1A742A6800AB366C /* CoolTableViewController.swift */; };
+		50ECB89F1A742E8000AB366C /* CustomCellBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ECB89E1A742E8000AB366C /* CustomCellBackground.swift */; };
+		50ECB8A11A7431E900AB366C /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ECB8A01A7431E900AB366C /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		50ECB8771A7429B300AB366C /* CoolTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50ECB87B1A7429B300AB366C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50ECB87C1A7429B300AB366C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		50ECB87E1A7429B300AB366C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		50ECB8811A7429B300AB366C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50ECB8831A7429B300AB366C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		50ECB8861A7429B300AB366C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		50ECB88C1A7429B300AB366C /* CoolTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50ECB8911A7429B300AB366C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50ECB8921A7429B300AB366C /* CoolTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolTableTests.swift; sourceTree = "<group>"; };
+		50ECB89C1A742A6800AB366C /* CoolTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolTableViewController.swift; sourceTree = "<group>"; };
+		50ECB89E1A742E8000AB366C /* CustomCellBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellBackground.swift; sourceTree = "<group>"; };
+		50ECB8A01A7431E900AB366C /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				50ECB87C1A7429B300AB366C /* AppDelegate.swift */,
-				50ECB87E1A7429B300AB366C /* ViewController.swift */,
 				50ECB8801A7429B300AB366C /* Main.storyboard */,
+				50ECB89C1A742A6800AB366C /* CoolTableViewController.swift */,
+				50ECB8A01A7431E900AB366C /* Common.swift */,
+				50ECB89E1A742E8000AB366C /* CustomCellBackground.swift */,
 				50ECB8831A7429B300AB366C /* Images.xcassets */,
 				50ECB8851A7429B300AB366C /* LaunchScreen.xib */,
 				50ECB87A1A7429B300AB366C /* Supporting Files */,
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50ECB87F1A7429B300AB366C /* ViewController.swift in Sources */,
+				50ECB8A11A7431E900AB366C /* Common.swift in Sources */,
+				50ECB89D1A742A6800AB366C /* CoolTableViewController.swift in Sources */,
+				50ECB89F1A742E8000AB366C /* CustomCellBackground.swift in Sources */,
 				50ECB87D1A7429B300AB366C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
