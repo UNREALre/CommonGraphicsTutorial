@@ -29,3 +29,14 @@ func drawLinearGradient(context: CGContextRef, rect: CGRect, startColor: CGColor
 func rectFor1PxStroke(rect: CGRect) -> CGRect {
     return CGRectMake(rect.origin.x + 0.5, rect.origin.y + 0.5, rect.size.width - 1, rect.size.height - 1)
 }
+
+func draw1PxStroke (context: CGContextRef, startPoint: CGPoint, endPoint: CGPoint, color: CGColorRef) {
+    CGContextSaveGState(context)
+    CGContextSetLineCap(context, kCGLineCapSquare)
+    CGContextSetStrokeColorWithColor(context, color)
+    CGContextSetLineWidth(context, 1.0)
+    CGContextMoveToPoint(context, startPoint.x + 0.5, startPoint.y + 0.5)
+    CGContextAddLineToPoint(context, endPoint.x + 0.5, endPoint.y + 0.5)
+    CGContextStrokePath(context)
+    CGContextRestoreGState(context)
+}

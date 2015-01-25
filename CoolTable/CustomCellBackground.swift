@@ -25,6 +25,10 @@ class CustomCellBackground: UIView {
         
         drawLinearGradient(context, paperRect, whiteColor.CGColor, lightGrayColor.CGColor)
         
+        let startPoint: CGPoint = CGPointMake(paperRect.origin.x, paperRect.origin.y + paperRect.size.height - 1)
+        let endPoint: CGPoint = CGPointMake(paperRect.origin.x + paperRect.size.width - 1, paperRect.origin.y + paperRect.size.height - 1)
+        draw1PxStroke(context, startPoint, endPoint, UIColor.greenColor().CGColor)
+        
         /*
         var strokeRect: CGRect = paperRect
         strokeRect.size.height -= 1
